@@ -1,0 +1,46 @@
+﻿<html>
+	<head>
+		<title>입력</title>
+		<script language = "javascript">
+			function aa()
+			{
+				alert("스크립트 호출함");
+			}
+		</script>
+	</head>
+	<body>
+	<form action = "index.html" method ="get">
+		<input type = "text" name = "id"><br>
+		<input type = "password" name = "pw"><br>
+		<input type = "radio" name = cyw checked>남
+		<input type = "radio" name = cyw>여
+		<input type = "radio" name = cyw1 checked>대면
+		<input type = "radio" name = cyw1>비대면<br>
+		<input type = "checkbox">배구
+		<input type = "checkbox">축구
+		<input type = "checkbox">농구
+		<input type = "checkbox">수영<br>
+		<input type = "date">
+		<input type = "time"><br>
+		<input type = "file">
+		<select>
+			<option>1학기</option>
+			<option selected>2학기</option>
+			<option>3학기</option>
+			<option>4학기</option>
+		</select>
+		<select size = "4">
+			<option>1학기</option>
+			<option selected>2학기</option>
+			<option>3학기</option>
+			<option>4학기</option>
+		</select>
+		<br>
+		<textarea cols = "100" rows = "10" placeholder="자기소개를 입력해주세요"></textarea>
+		<br>
+		<input type = "button" value = "일반버튼" onclick = "aa()">
+		<input type = "submit" value = "서버프로그램호출">
+		<input type = "reset" value = "초기화">
+	</from>
+	</body>
+</html>

@@ -1,0 +1,479 @@
+﻿<html>
+	<head>
+		<title>기본인적사항</title>
+		<script>
+			function calc()
+			{
+				document.getElementById('result1').value = document.getElementById('content1').value.length;
+				document.getElementById('result2').value = document.getElementById('content2').value.length;
+			}
+		</script>
+		<style>
+			span{float: right;}
+		</style>
+	</head>
+	<body>
+		<h4 style="color: orange">기본인적사항</h4>
+		<table border="1">
+			<tr>
+				<td>응시분야</td>
+				<td colspan = "3">신입객실승무원</td>
+			</tr>
+			<tr>
+				<td>응시구분</td>
+				<td colspan = "3"><input type = "radio" name ="승무원" checked>국제선 인턴 객실승무원
+				<input type = "radio" name ="승무원">국내선 전담 객실승무원</td>
+			</tr>
+			<tr>
+				<td>면접희망지역</td>
+				<td colspan = "3"><input type = "radio" name ="지역" checked>서울
+				<input type = "radio" name ="지역" >부산
+				<input type = "radio" name ="지역" >광주</td>
+			</tr>
+			<tr>
+				<td>대학구분 (*)</td>
+				<td colspan = "3"><input type = "radio" name ="대학" >2,3년제 
+				<input type = "radio" name ="대학" checked>4년제</td>
+			</tr>
+			<tr>
+				<td>한글서명 (*)</td>
+				<td> <input type = "text"></td>
+				<td>영문서명 (*) </td>
+				<td> <input type = "text"></td>
+			</tr>
+			<tr>
+				<td>주민등록번호 (*) </td>
+				<td> <input type = "text"></td>
+				<td>E-MAIL (*) </td>
+				<td> <input type = "text"></td>
+			</tr>
+			<tr>
+				<td>전화번호 (*)</td>
+				<td> <input type = "text"></td>
+				<td>휴대전화번호 (*)</td>
+				<td> <input type = "text"></td>
+			</tr>
+			<tr>
+				<td>사진(*)</td>
+				<td colspan = "3"><input type = "text" size = 40><input type = "file" name = file></td>
+			</tr>	
+			<tr>
+				<td rowspan = "3" >주소(*)</td>
+				<td colspan = "3"rowspan = "3"><input type = "text" size = 10>검색<br><input type = "text" size = 50>(시, 구, 동 까지)<br><input type = "text" size = 50>(상세주소)</td>
+			</tr>
+			<tr>	
+			</tr>
+			<tr>	
+			</tr>
+			<tr>
+				<td>신장(*)</td>
+				<td colspan = "3"><input type = "text" size = 10>cm</td>
+			</tr>
+			<tr>	
+				<td>나의 시력</td>
+				<td>좌<input type = "text" size = 1>/우<input type = "text" size = 1></td>
+				<td>교정시력</td>
+				<td>좌<input type = "text" size = 1>/우<input type = "text" size = 1></td>
+			</tr>
+			<tr>	
+				<td>취미/특기</td>
+				<td colspan = "3"><input type = "text"></td>
+			</tr>
+			<tr>	
+				<td>보훈대상</td>
+				<td><input type = "radio" checked>비대상<input type = "radio">대상</td>
+				<td>보훈번호</td>
+				<td><input type = "text"></td>
+			</tr>
+			<tr>
+				<td rowspan = "2">고등학교(*)</td>
+				<td colspan = "3" rowspan = "2">학교<input type = "text"><br>입학<input type = "text" size = 1>년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월&nbsp;&nbsp;
+				졸업<input type = "text" size = 1>년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월
+				</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td rowspan = "4">전문대학(*)</td>
+				<td colspan = "3" rowspan = "4">학교
+				<select name = "school">
+					<option value = "school1">부산경상대학교</option>
+					<option value = "school1">경남정보대학교</option>
+					<option value = "school1">한국폴리텍대학교</option>
+				</select>
+				<input type ="text" size = "15">대학(기타 및 해외일경우)<br>
+				학과<input type = "text">
+				<select name = "department">
+					<option value = "department1">컴퓨터융합정보과</option>
+					<option value = "department1">유아교육과</option>
+				</select><br>
+				성적<input type ="text" size = "1">/
+				<select name = "grades">
+					<option value = "grades1">4.5</option>
+					<option value = "grades1">4.3</option>
+				</select><br>
+				입학<input type = "text" size = 1>년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월&nbsp;&nbsp;
+				졸업<input type = "text" size = 1>년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월
+				</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td rowspan = "5">대학교(*)</td>
+				<td colspan = "3" rowspan = "5">학교
+				<select name = "school">
+					<option value = "school1">부산대학교</option>
+					<option value = "school1">경성대학교</option>
+				</select>
+				<input type ="text" size = "15">대학교(기타 및 해외일경우)<br>
+				학과<input type = "text">
+				<select name = "department">
+					<option value = "department1">법학과</option>
+					<option value = "department1">화학과</option>
+				</select><br>
+				성적<input type ="text" size = "1">/
+				<select name = "grades">
+					<option value = "grades1">4.5</option>
+					<option value = "grades1">4.3</option>
+				</select><br>
+				입학<input type = "text" size = 1>년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월&nbsp;&nbsp;
+				졸업<input type = "text" size = 1>년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월<br>
+				도시명<input type ="text">국가명<input type ="text">※해외대학교에 해당<br>
+				※ 편의자는 전문대학란에 편입전 학력을 기재하시기 바랍니다.
+				</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td rowspan = "4">대학원</td>
+				<td colspan = "3" rowspan = "4">학교
+				<input type ="text" size = "15">대학교
+				<select name = "school">
+					<option value = "school1">부경대학교</option>
+					<option value = "school1">동의대학교</option>
+					<option value = "school1">신라대학교</option>
+				</select><br>
+				학과<input type = "text">
+				<select name = "department">
+					<option value = "department1">의학과</option>
+					<option value = "department1">치의학과</option>
+				</select><br>
+				성적<input type ="text" size = "1">/
+				<select name = "grades">
+					<option value = "grades1">4.5</option>
+					<option value = "grades1">4.3</option>
+				</select>(만점)<br>
+				입학<input type = "text" size = 1>년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월&nbsp;&nbsp;
+				졸업<input type = "text" size = 1>년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월
+				</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td rowspan = "11">경력사항</td>
+				<td colspan = "3">근무처<input type = "text">&nbsp담당업무<input type = "text"></td>
+			</tr>
+			<tr>
+				<td colspan = "3">기  간<input type = "text" size = "1">년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월 ~ 
+				<input type = "text" size = "1">년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월
+			</tr>
+			<tr>
+				<td colspan = "3">사직사유<input type = "text" size = "10">&nbsp 재직당시 신분
+				<select name = "Identity" >
+					<option value = "Identity">대리</option>
+					<option value = "Identity">과장</option>
+					<option value = "Identity">부장</option>
+				</select>
+			</tr>
+			<tr>
+				<td colspan = "3">근무처<input type = "text">&nbsp담당업무<input type ="text">
+			</tr>
+			<tr>
+				<td colspan = "3">기   간<input type = "text" size = "1">년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월 ~ 
+				<input type = "text" size = "1">년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월
+			</tr>
+			<tr>
+				<td colspan = "3">사직사유<input type = "text" size = "10">&nbsp 재직당시 신분
+				<select name = "Identity" >
+					<option value = "Identity">대리</option>
+					<option value = "Identity">과장</option>
+					<option value = "Identity">부장</option>
+				</select>
+			</tr>
+			<tr>
+				<td colspan = "3">근무처<input type = "text">&nbsp담당업무<input type ="text">
+			</tr>
+			<tr>
+				<td colspan = "3">기   간<input type = "text" size = "1">년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월 ~ 
+				<input type = "text" size = "1">년
+				<select name = "month">
+					<option value = "month">1</option>
+					<option value = "month">2</option>
+					<option value = "month">3</option>
+					<option value = "month">4</option>
+					<option value = "month">5</option>
+					<option value = "month">6</option>
+					<option value = "month">7</option>
+					<option value = "month">8</option>
+					<option value = "month">9</option>
+					<option value = "month">10</option>
+					<option value = "month">11</option>
+					<option value = "month">12</option>
+				</select>월
+			</tr>
+			<tr>
+				<td colspan = "3">사직사유<input type = "text" size = "10">&nbsp 재직당시 신분
+				<select name = "Identity" >
+					<option value = "Identity">대리</option>
+					<option value = "Identity">과장</option>
+					<option value = "Identity">부장</option>
+				</select>
+			</tr>
+			<tr>
+				<td colspan = "3">학교명<input type = "text" size = "17">&nbsp
+				국가<input type = "text" size = "6">&nbsp도시<input type = "text"  size = "6">
+			</tr>
+			<tr>
+				<td colspan = "3">기&nbsp&nbsp&nbsp간<input type = "text" size = "5">~<input type ="text" size = "5">&nbsp&nbsp구분
+				<select name = "division">
+					<option value = "division">수료</option>
+					<option value = "division">중퇴</option>
+				</select>
+			</tr>
+			<tr>
+				<td rowspan = "2">해외수학(연수)<br>경험
+				<td colspan = "3">학교명<input type = "text" size = "17">&nbsp
+				국가<input type = "text" size = "5">&nbsp도시<input type = "text"  size = "5">
+			</tr>
+			<tr>
+				<td colspan = "3">기&nbsp&nbsp&nbsp간<input type = "text" size = "5">~<input type ="text" size = "5">&nbsp&nbsp구분
+				<select name = "division">
+					<option value = "division">수료</option>
+					<option value = "division">중퇴</option>
+				</select>
+			</tr>
+			<tr>
+				<td rowspan = "3"></td>
+				<td colspan = "3">학교명<input type = "text" size = "17">&nbsp
+				국가<input type = "text" size = "6">&nbsp도시<input type = "text"  size = "6">
+			</tr>
+			<tr>
+				<td colspan = "3">기&nbsp&nbsp&nbsp간<input type = "text" size = "5">~<input type ="text" size = "5">&nbsp&nbsp구분
+				<select name = "division">
+					<option value = "division" >수료</option>
+					<option value = "division">중퇴</option>
+				</select>
+			</tr>
+			<tr>			
+			</tr>
+			<tr>
+				<td colspan ="4">지원동기 (500자이내) <span>글자수<input type = "text" id="result1" value="0" name = "textbox_1"  size = "1" readonly>자</span></td>
+			</tr>
+			<tr>
+				<td colspan = "4"><textarea name = "textbox" id="content1" cols="100%" rows="10" onkeypress="calc()" onkeyup="calc()" onkeydown="calc()"></textarea>
+			</tr>
+			<tr>
+				<td colspan ="4">입사후 계획/포부 (500자이내) <span>글자수<input type = "text" id="result2" value="0" size = "1" name = "textbox_1" readonly > 자</span></td>
+			</tr>
+			<tr>
+				<td colspan = "4"><textarea name = "textbox" id="content2"cols="100%" rows="10" onkeypress="calc()" onkeyup="calc()" onkeydown="calc()"></textarea>
+			</tr>
+		</table>
+	</body>
+</html>
