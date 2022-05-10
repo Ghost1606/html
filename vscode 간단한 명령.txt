@@ -1,0 +1,7 @@
+태그 * n  > div*3 (div 3개 생성)
+태그>태그>태그  > div>ul>li (div안에 ul 안에 li 생성)
+태그+태그+태그 > div+ul+li(각 태그 생성)
+태그#아이디 > div.#name(div id = "name") #아이디 > 기본 div가 태그 설정 되어있음
+태그.클래스 > div.job(div class = "job") .job > 기본 div가 태그 설정 되어있음
+p{텍스트 입력} > p{안녕하세요}(p태그 안에 적어짐)
+
